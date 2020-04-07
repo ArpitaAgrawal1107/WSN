@@ -1,31 +1,28 @@
-import React,{Component} from 'react'
-class Message extends Component{
-    constructor()
-    {
+import React, { Component } from 'react'
+class Message extends Component {
+    constructor() {
         super()
-        this.state ={
-            message : 'Welcome visitor'
+        this.state = {
+            message: 'Welcome visitor'
         }
     }
-    
-    changeMessage()
-    {
+
+    changeMessage() {
         this.setState
-        ({
-            message : 'Thank You'
-        })
+            ({
+                message: 'Thank You'
+            })
     }
-    
-    render()
-    {
-    return( 
-    <div>
-        <h1>{this.state.message}</h1>
-        <button onClick={() => this.changeMessage()}>Subscribe</button>
-        
-        </div>
-       
-    )
+
+    render() {
+        return (
+            <div>
+                <h1>{this.state.message}</h1>
+                <button onClick={() => this.changeMessage()}>Subscribe</button>
+
+            </div>
+
+        )
     }
 }
 export default Message

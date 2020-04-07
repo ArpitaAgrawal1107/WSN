@@ -1,7 +1,6 @@
 import React from 'react'
 //FUNCTIONAL COMPONENT
-function Greet()
-{  
+function Greet() {
     return <h1>Arpita</h1>
 
 }
